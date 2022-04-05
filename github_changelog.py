@@ -63,10 +63,9 @@ def main():
             changelog.write('- ### Committer: ' + commit['commit']['committer']['name']+ '\n')
             changelog.write('- ### Date Committed: ' + commit['commit']['committer']['date']+ '\n')
             commits_number += 1
-
-os.system("git add -A")
-os.system("git commit -m 'Update Changelog'")
-os.system("git push")
+    os.system("git add -A")
+    os.system("git commit -m 'Update Changelog'")
+    os.system("git push") 
 
 # run the main function
 if __name__ == '__main__':
